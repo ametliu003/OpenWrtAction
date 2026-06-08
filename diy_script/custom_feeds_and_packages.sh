@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# feeds扩展内容
+# feeds扩展内容 — 只保留需要的
 export repos=(
   "src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main"
   "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main"
-  "src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main"
-  "src-git helloworld https://github.com/fw876/helloworld;master"
   "src-git OpenClash https://github.com/vernesong/OpenClash;master"
-  "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main"
+  "src-git homeproxy https://github.com/immortalwrt/homeproxy;main"
+  "src-git lucky https://github.com/sirpdboy/luci-app-lucky.git;main"
   "src-git ghfu https://github.com/smallprogram/luci-app-ghfu.git;main"
 )
 
@@ -21,81 +20,37 @@ clone_custom_packages () {
         PATCHES_SRC_DIR="../OpenWrtAction"
     fi
 
-
     rm -rf ${path}
     mkdir -p ${path}
 
+    # 只保留 Argon 主题和配置
     git clone https://github.com/jerrykuku/luci-theme-argon.git ${path}luci-theme-argon
     git clone https://github.com/jerrykuku/luci-app-argon-config.git ${path}luci-app-argon-config
-    git clone https://github.com/sirpdboy/luci-theme-kucat.git ${path}luci-theme-kucat
-    git clone https://github.com/sirpdboy/luci-app-kucat-config.git ${path}luci-app-kucat-config
-    git clone https://github.com/eamonxg/luci-theme-aurora.git ${path}luci-theme-aurora
-    git clone https://github.com/derisamedia/luci-theme-alpha-reborn.git ${path}luci-theme-alpha-reborn
-    git clone https://github.com/derisamedia/luci-theme-alpha.git ${path}luci-theme-alpha
-    git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
-    git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
-    # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ${path}luci-app-adguardhome
-    git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
 
-    # luci-app-netspeedtest source can't connect, use local copy instead
-    # git clone https://github.com/sirpdboy/luci-app-netspeedtest ${path}netspeedtest
-    git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
-    # cp -a $PATCHES_SRC_DIR/diy_script/custom_packages/netspeedtest ${path}
-
-
-    git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix
-    git clone https://github.com/timsaya/luci-app-bandix.git ${path}luci-app-bandix
-    git clone https://github.com/timsaya/openwrt-bandix-plus.git ${path}openwrt-bandix-plus
-    git clone https://github.com/timsaya/luci-app-bandix-plus.git ${path}luci-app-bandix-plus
-    
-
-    git clone https://github.com/destan19/OpenAppFilter.git ${path}OpenAppFilter
-
-    
-
-    # sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "${path}luci-theme-alpha-reborn/Makefile"
-    sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "${path}luci-theme-alpha/Makefile"
-
-    
     local target="luci.main.mediaurlbase="
 
-    echo "开始全量扫描并注释目标字符串, 取消主题自动设置为默认主题..."
-    # 1. 扫描所有 Makefile 文件
-    # 2. 扫描所有 uci-defaults 目录下的文件
+    echo "Scanning and commenting default theme auto-set..."
     find "$path" -type f \( -name "Makefile" -o -path "*/etc/uci-defaults/*" \) | while read -r file; do
-        
-        # 这里的 grep 需要更宽松，因为 Makefile 里的行首可能是 Tab 或者是脚本定义的起始
         if grep -q "$target" "$file"; then
-            echo "命中目标: $file"
-            
-            # 针对 Makefile 的特殊处理：
-            # Makefile 里的 postrm 脚本行首通常会有空格或 Tab
-            # 我们直接匹配包含 target 的行，并在该行非空字符前加 #
-            # 使用 [[:blank:]]* 兼容 Tab 和空格
+            echo "Hit: $file"
             sed -i "/$target/s/^\([[:blank:]]*\)\([^#[:blank:]]\)/\1# \2/" "$file"
         fi
     done
 
-    echo "注释处理完成。"
+    echo "Comment processing complete."
+
     #-------------------------------------------设置默认主题------------------------------------------
-    # 1. 确保构建根目录下的自定义文件路径存在
     mkdir -p files/etc/uci-defaults
-    # 2. 将主题设置脚本写入到 zz-set-default-theme 文件中
-    # 这里的文本必须全部顶格写，防止 #!/bin/sh 前面产生空格
 cat << "EOF" > files/etc/uci-defaults/zz-set-default-theme
 #!/bin/sh
-
-# 强制覆写节点，不判断任何条件
 uci set luci.themes.Argon=/luci-static/argon
 uci set luci.main.mediaurlbase=/luci-static/argon
 uci commit luci
-
 exit 0
 EOF
-
-    # 3. 赋予可执行权限（否则不会在开机执行）
     chmod +x files/etc/uci-defaults/zz-set-default-theme
-
-    echo "默认主题设置已生成！"
+    echo "Default theme set!"
     #-------------------------------------------end设置默认主题------------------------------------------
+
+    echo "Custom packages cloned (argon only, no extra themes)"
 }

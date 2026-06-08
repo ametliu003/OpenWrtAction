@@ -11,6 +11,8 @@
 name: Build_Multi_Platform(V6)
 
 on:
+  schedule:
+    - cron: '0 14 * * *'  # UTC 14:00 = 北京时间 22:00 每天
   repository_dispatch:
     types: [openwrt_source_update_v6]
   workflow_dispatch:
@@ -634,17 +636,43 @@ jobs:
         run: |
           cd openwrt
           df -h
-          # chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
 
-          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-              make -j$(nproc) V=s
-              MAKE_EXIT_CODE=$?
-              exit $MAKE_EXIT_CODE
-          else
-              make -j$(nproc)
-              MAKE_EXIT_CODE=$?
-              exit $MAKE_EXIT_CODE
+          # 始终使用 V=sc 输出详细编译信息，方便定位错误
+          make -j$(nproc) V=sc 2>&1 | tee /tmp/build.log
+          MAKE_EXIT_CODE=${PIPESTATUS[0]}
+
+          if [ $MAKE_EXIT_CODE -ne 0 ]; then
+              echo ""
+              echo "=========================================="
+              echo "❌ 编译失败！以下是最后 80 行错误日志："
+              echo "=========================================="
+              tail -80 /tmp/build.log
+              echo "=========================================="
+              echo "❌ 完整日志已保存，编译退出码: $MAKE_EXIT_CODE"
+              echo "=========================================="
           fi
+
+          exit $MAKE_EXIT_CODE
+
+      - name: Extract Error Details
+        if: steps.compile.outcome == 'failure' && !cancelled()
+        run: |
+          echo "=========================================="
+          echo "🔍 错误详细分析"
+          echo "=========================================="
+          if [ -f /tmp/build.log ]; then
+              echo "--- 最近的错误行 ---"
+              grep -i -n "error\|Error\|ERROR\|failed\|FAILED\|fatal\|FATAL" /tmp/build.log | tail -30
+              echo ""
+              echo "--- 最近的编译目标 ---"
+              grep -i "make\[.*Entering\|Leaving" /tmp/build.log | tail -10
+              echo ""
+              echo "--- 最后的 make 输出 ---"
+              tail -20 /tmp/build.log
+          else
+              echo "编译日志不存在"
+          fi
+          echo "=========================================="
 
       - name: Organize Files
         id: organize

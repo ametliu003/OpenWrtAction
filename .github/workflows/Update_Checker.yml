@@ -19,8 +19,8 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: '0 16 */3 * *'
-    # 每三天的UTC 16:00触发 北京时间为每三天的凌晨0点
+    - cron: '0 14 * * *'
+    # 每天UTC 14:00触发 北京时间每天22:00
 
 permissions:
   contents: write
