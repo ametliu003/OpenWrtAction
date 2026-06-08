@@ -795,19 +795,10 @@ jobs:
     needs: [rerun-failed-jobs, job_organize_tags]
     if: ${{ always() && !cancelled() }}
     steps:
-#      - name: Trigger Release Update
-#        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
-#        uses: peter-evans/repository-dispatch@v4
-#        with:
-#          token: ${{ secrets.MY_SECRET_PAT }}
-#          repository: smallprogram/MyAction
-#          event-type: openwrt_compilation_completed
-
-      # - name: Stateful Lifecycle Check
-      #   id: lifecycle_check
-      #   run: |
-      #     chmod +x compile_script/check_lifecycle.sh
-      #     $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+      - name: Build Complete
+        run: |
+          echo "✅ Build workflow completed"
+          echo "Check releases at: ${{ github.server_url }}/${{ github.repository }}/releases" 
 
       # - name: Trigger Cache Update
       #   if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
