@@ -5,7 +5,7 @@ export repos=(
   "src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main"
   "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main"
   "src-git OpenClash https://github.com/vernesong/OpenClash;master"
-  "src-git homeproxy https://github.com/immortalwrt/homeproxy;main"
+  "src-git homeproxy https://github.com/immortalwrt/homeproxy;master"
   "src-git lucky https://github.com/sirpdboy/luci-app-lucky.git;main"
   "src-git ghfu https://github.com/smallprogram/luci-app-ghfu.git;main"
 )
