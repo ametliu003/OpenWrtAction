@@ -1,0 +1,9 @@
+<details> <summary> <b>homeproxy new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/homeproxy/compare/29f61caf303cd3a7051e26055dc97fdf4890e2b0...46137662e2604f7127f9382d834326579db8fb6a)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+4613766|stupidloud|Thu Jun 4 21:51:20 2026 +0800|fix(generator/client): append unit to gRPC/HTTP2 transport timeouts
+</details>
