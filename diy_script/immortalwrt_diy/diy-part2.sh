@@ -21,6 +21,11 @@ fi
 # rm appfilter
 rm -rf ./feeds/packages/net/open-app-filter
 
+# Disable shadowsocksr-libev (mbedtls 3.x incompatible)
+rm -rf ./feeds/passwall_packages/shadowsocksr-libev 2>/dev/null
+sed -i 's/CONFIG_PACKAGE_shadowsocksr_libev=y/# CONFIG_PACKAGE_shadowsocksr_libev is not set/g' .config 2>/dev/null
+sed -i '/CONFIG_PACKAGE_shadowsocksr_libev/d' .config 2>/dev/null
+
 # =============================================
 # NOT modifying default IP — keep 192.168.1.1
 # =============================================
