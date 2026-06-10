@@ -426,3 +426,51 @@ SMARTDNS_UCI
 
 chmod +x files/etc/uci-defaults/99-smartdns-optimize
 echo "DIY2 + SmartDNS optimization is complete!"
+
+
+# =============================================
+# PassWall 优化配置 (SmartDNS 集成)
+# =============================================
+cat << 'PASSWALL_UCI' > files/etc/uci-defaults/98-passwall-optimize
+#!/bin/sh
+# PassWall 优化配置 - 集成 SmartDNS
+
+# 等待 PassWall 安装完成
+sleep 5
+
+# 基本配置
+uci set passwall.@global[0].enabled='1'
+uci set passwall.@global[0].dns_mode='tcp'
+uci set passwall.@global[0].remote_dns='127.0.0.1#5335'  # 指向 SmartDNS
+uci set passwall.@global[0].dns_shunt='chinadns-ng'
+uci set passwall.@global[0].chn_list='direct'
+uci set passwall.@global[0].tcp_proxy_mode='proxy'
+uci set passwall.@global[0].udp_proxy_mode='proxy'
+uci set passwall.@global[0].localhost_proxy='1'
+uci set passwall.@global[0].client_proxy='1'
+uci set passwall.@global[0].udp_node='tcp'
+uci set passwall.@global[0].loglevel='warning'
+
+# 转发配置
+uci set passwall.@global_forwarding[0].tcp_redir_ports='22,25,53,80,143,443,465,587,853,873,993,995,5222,8080,8443,9418,18888'
+uci set passwall.@global_forwarding[0].udp_redir_ports='1:65535'
+uci set passwall.@global_forwarding[0].prefer_nft='1'
+uci set passwall.@global_forwarding[0].tcp_proxy_way='redirect'
+
+# 规则自动更新
+uci set passwall.@global_rules[0].auto_update='1'
+uci set passwall.@global_rules[0].chnlist_update='1'
+uci set passwall.@global_rules[0].chnroute_update='1'
+uci set passwall.@global_rules[0].chnroute6_update='1'
+uci set passwall.@global_rules[0].gfwlist_update='1'
+uci set passwall.@global_rules[0].geosite_update='1'
+uci set passwall.@global_rules[0].geoip_update='1'
+
+# 保存配置
+uci commit passwall
+
+logger "PassWall 优化配置已应用 (SmartDNS 集成)"
+PASSWALL_UCI
+
+chmod +x files/etc/uci-defaults/98-passwall-optimize
+echo "PassWall 优化配置已添加"
