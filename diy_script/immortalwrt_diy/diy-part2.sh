@@ -141,62 +141,85 @@ uci set firewall.@forwarding[0].dest='wan'
 uci commit network
 uci commit firewall
 
-# --- Configure mwan3 ---
+# --- Configure mwan3 (用户自定义配置) ---
+uci set mwan3.globals=globals
+uci set mwan3.globals.mmx_mask='0x3F00'
+
+# balanced policy
+uci set mwan3.balanced=policy
+uci delete mwan3.balanced.use_member 2>/dev/null
+uci add_list mwan3.balanced.use_member='wan_w10'
+uci add_list mwan3.balanced.use_member='wan2_w5'
+uci set mwan3.balanced.last_resort='default'
+
+# HTTPS rule (sticky)
+uci set mwan3.https=rule
+uci set mwan3.https.sticky='1'
+uci set mwan3.https.dest_port='443'
+uci set mwan3.https.proto='tcp'
+uci set mwan3.https.use_policy='balanced'
+
+# Default rule v4
+uci set mwan3.default_rule_v4=rule
+uci set mwan3.default_rule_v4.dest_ip='0.0.0.0/0'
+uci set mwan3.default_rule_v4.use_policy='balanced'
+uci set mwan3.default_rule_v4.family='ipv4'
+
+# Default rule v6
+uci set mwan3.default_rule_v6=rule
+uci set mwan3.default_rule_v6.dest_ip='::/0'
+uci set mwan3.default_rule_v6.use_policy='balanced'
+uci set mwan3.default_rule_v6.family='ipv6'
+
 # WAN interface
 uci set mwan3.wan=interface
 uci set mwan3.wan.enabled='1'
+uci set mwan3.wan.initial_state='online'
 uci set mwan3.wan.family='ipv4'
-uci add_list mwan3.wan.track_ip='114.114.114.114'
+uci set mwan3.wan.track_method='ping'
+uci set mwan3.wan.reliability='1'
+uci set mwan3.wan.count='1'
+uci set mwan3.wan.size='56'
+uci set mwan3.wan.max_ttl='60'
+uci set mwan3.wan.timeout='4'
+uci set mwan3.wan.interval='10'
+uci set mwan3.wan.failure_interval='5'
+uci set mwan3.wan.recovery_interval='5'
+uci set mwan3.wan.down='5'
+uci set mwan3.wan.up='5'
+uci delete mwan3.wan.track_ip 2>/dev/null
 uci add_list mwan3.wan.track_ip='223.5.5.5'
 uci add_list mwan3.wan.track_ip='119.29.29.29'
-uci set mwan3.wan.reliability='2'
-uci set mwan3.wan.count='1'
-uci set mwan3.wan.timeout='2'
-uci set mwan3.wan.interval='5'
-uci set mwan3.wan.down='3'
-uci set mwan3.wan.up='3'
 
 # WAN2 interface
 uci set mwan3.wan2=interface
 uci set mwan3.wan2.enabled='1'
+uci set mwan3.wan2.initial_state='online'
 uci set mwan3.wan2.family='ipv4'
-uci add_list mwan3.wan2.track_ip='114.114.114.114'
+uci set mwan3.wan2.track_method='ping'
+uci set mwan3.wan2.reliability='1'
+uci set mwan3.wan2.count='1'
+uci set mwan3.wan2.size='56'
+uci set mwan3.wan2.max_ttl='60'
+uci set mwan3.wan2.timeout='4'
+uci set mwan3.wan2.interval='10'
+uci set mwan3.wan2.failure_interval='5'
+uci set mwan3.wan2.recovery_interval='5'
+uci set mwan3.wan2.down='5'
+uci set mwan3.wan2.up='5'
+uci delete mwan3.wan2.track_ip 2>/dev/null
 uci add_list mwan3.wan2.track_ip='223.5.5.5'
 uci add_list mwan3.wan2.track_ip='119.29.29.29'
-uci set mwan3.wan2.reliability='2'
-uci set mwan3.wan2.count='1'
-uci set mwan3.wan2.timeout='2'
-uci set mwan3.wan2.interval='5'
-uci set mwan3.wan2.down='3'
-uci set mwan3.wan2.up='3'
 
-# mwan3 member (balanced 1:1)
-uci set mwan3.balanced=member
-uci set mwan3.balanced.interface='wan'
-uci set mwan3.balanced.metric='1'
-uci set mwan3.balanced.weight='1'
+# WAN member (weight 10)
+uci set mwan3.wan_w10=member
+uci set mwan3.wan_w10.interface='wan'
+uci set mwan3.wan_w10.weight='10'
 
-uci set mwan3.balanced2=member
-uci set mwan3.balanced2.interface='wan2'
-uci set mwan3.balanced2.metric='1'
-uci set mwan3.balanced2.weight='1'
-
-# mwan3 policy (balanced 1:1)
-uci set mwan3.balanced_policy=policy
-uci set mwan3.balanced_policy.use_member[0]='balanced'
-uci set mwan3.balanced_policy.use_member[1]='balanced2'
-uci set mwan3.balanced_policy.last_resort='unreachable'
-
-# mwan3 rule (default balanced)
-uci set mwan3.default_rule=rule
-uci set mwan3.default_rule.src='0.0.0.0/0'
-uci set mwan3.default_rule.dest='0.0.0.0/0'
-uci set mwan3.default_rule.proto='all'
-uci set mwan3.default_rule.sticky='0'
-uci set mwan3.default_rule.use_policy='balanced_policy'
-
-# Enable mwan3 service
-uci set mwan3.globals.enabled='1'
+# WAN2 member (weight 5)
+uci set mwan3.wan2_w5=member
+uci set mwan3.wan2_w5.interface='wan2'
+uci set mwan3.wan2_w5.weight='5'
 
 uci commit mwan3
 
@@ -474,3 +497,49 @@ PASSWALL_UCI
 
 chmod +x files/etc/uci-defaults/98-passwall-optimize
 echo "PassWall 优化配置已添加"
+
+
+# =============================================
+# OpenClash 核心预下载 + HomeProxy 配置
+# =============================================
+cat << 'OPENCLASH_UCI' > files/etc/uci-defaults/97-openclash-homeproxy
+#!/bin/sh
+# OpenClash 核心预下载 + HomeProxy 配置
+
+# 等待系统启动完成
+sleep 10
+
+# OpenClash - 下载核心文件
+OPENCLASH_DIR="/etc/openclash"
+mkdir -p "$OPENCLASH_DIR/core"
+
+# 下载 mihomo 核心 (Clash.Meta)
+if [ ! -f "$OPENCLASH_DIR/core/mihomo" ]; then
+    logger "OpenClash: 下载 mihomo 核心..."
+    wget -q -O "$OPENCLASH_DIR/core/mihomo" "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.0/mihomo-linux-amd64-compatible-v1.19.0.gz" 2>/dev/null
+    if [ -f "$OPENCLASH_DIR/core/mihomo" ]; then
+        gunzip "$OPENCLASH_DIR/core/mihomo.gz" 2>/dev/null
+        chmod +x "$OPENCLASH_DIR/core/mihomo"
+        logger "OpenClash: mihomo 核心下载完成"
+    else
+        logger "OpenClash: mihomo 核心下载失败，请手动下载"
+    fi
+fi
+
+# OpenClash - 设置为不自动启动
+uci set openclash.config.enable='0'
+uci commit openclash
+
+# HomeProxy - 设置为不自动启动
+uci set homeproxy.config.enable='0'
+uci commit homeproxy
+
+# PassWall - 确保启用
+uci set passwall.@global[0].enabled='1'
+uci commit passwall
+
+logger "OpenClash/HomeProxy 配置完成 (禁用自动启动)"
+OPENCLASH_UCI
+
+chmod +x files/etc/uci-defaults/97-openclash-homeproxy
+echo "OpenClash/HomeProxy 配置已添加"
