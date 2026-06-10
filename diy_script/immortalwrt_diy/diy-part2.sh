@@ -322,3 +322,107 @@ chmod +x files/etc/uci-defaults/20-static-dhcp
 
 
 echo "DIY2 is complete!"
+
+
+# =============================================
+# SmartDNS 国内网络优化
+# =============================================
+mkdir -p files/etc/uci-defaults
+
+cat << 'SMARTDNS_UCI' > files/etc/uci-defaults/99-smartdns-optimize
+#!/bin/sh
+# SmartDNS 国内网络优化配置
+
+# 设置基本配置
+uci set smartdns.smartdns.enabled='1'
+uci set smartdns.smartdns.server_name='SmartDNS-Kevin'
+uci set smartdns.smartdns.port='5335'
+uci set smartdns.smartdns.bind='[::]:5335'
+
+# 国外 DNS
+uci delete smartdns.smartdns.server_tcp 2>/dev/null
+uci add_list smartdns.smartdns.server_tcp='8.8.8.8:53'
+uci add_list smartdns.smartdns.server_tcp='1.1.1.1:53'
+
+uci delete smartdns.smartdns.server_https 2>/dev/null
+uci add_list smartdns.smartdns.server_https='https://1.1.1.1/dns-query'
+uci add_list smartdns.smartdns.server_https='https://dns.google/dns-query'
+
+# 测速配置
+uci set smartdns.smartdns.speed_check_mode='ping,tcp:80,tcp:443'
+uci set smartdns.smartdns.tcp_concurrent='1'
+
+# 缓存配置 (优化)
+uci set smartdns.smartdns.cache_size='10000'
+uci set smartdns.smartdns.cache_persist='1'
+uci set smartdns.smartdns.prefetch_domain='1'
+uci set smartdns.smartdns.serve_expired='1'
+uci set smartdns.smartdns.serve_expired_ttl='86400'
+
+# TTL 配置
+uci set smartdns.smartdns.rr_ttl_min='300'
+uci set smartdns.smartdns.rr_ttl_max='86400'
+uci set smartdns.smartdns.rr_ttl_reply_max='300'
+
+# 其他优化
+uci set smartdns.smartdns.force_qtype_SOA='65'
+uci set smartdns.smartdns.deny_domain_served='.'
+
+# 删除旧的服务器组配置
+uci delete smartdns.group_domestic 2>/dev/null
+uci delete smartdns.group_foreign 2>/dev/null
+
+# 创建国内DNS组
+uci set smartdns.group_domestic='server'
+uci set smartdns.group_domestic.name='国内DNS组'
+uci set smartdns.group_domestic.type='group'
+uci set smartdns.group_domestic.strategy='default'
+uci delete smartdns.group_domestic.server 2>/dev/null
+uci add_list smartdns.group_domestic.server='119.29.29.29'
+uci add_list smartdns.group_domestic.server='223.5.5.5'
+uci add_list smartdns.group_domestic.server='119.28.28.28'
+uci add_list smartdns.group_domestic.server='223.6.6.6'
+
+# 创建国外DNS组
+uci set smartdns.group_foreign='server'
+uci set smartdns.group_foreign.name='国外DNS组'
+uci set smartdns.group_foreign.type='group'
+uci set smartdns.group_foreign.strategy='default'
+uci delete smartdns.group_foreign.server 2>/dev/null
+uci add_list smartdns.group_foreign.server='8.8.8.8'
+uci add_list smartdns.group_foreign.server='1.1.1.1'
+uci add_list smartdns.group_foreign.server='208.67.222.222'
+
+# 删除旧的域名规则
+uci delete smartdns.domestic_rule 2>/dev/null
+uci delete smartdns.google_cn_rule 2>/dev/null
+uci delete smartdns.google_rule 2>/dev/null
+
+# 国内域名走国内DNS
+uci set smartdns.domestic_rule='domain-rules'
+uci set smartdns.domestic_rule.name='国内域名走国内DNS'
+uci set smartdns.domestic_rule.server='group-domestic'
+uci set smartdns.domestic_rule.dest_queue='group-domestic'
+uci set smartdns.domestic_rule.ipset='chnroute'
+uci set smartdns.domestic_rule.nftset='chnroute#4#inet'
+
+# Google CN 走国内DNS
+uci set smartdns.google_cn_rule='domain-rules'
+uci set smartdns.google_cn_rule.name='Google CN'
+uci set smartdns.google_cn_rule.server='group-domestic'
+
+# Google 走国外DNS
+uci set smartdns.google_rule='domain-rules'
+uci set smartdns.google_rule.name='Google'
+uci set smartdns.google_rule.server='group-foreign'
+uci set smartdns.google_rule.ipset='gfwlist'
+uci set smartdns.google_rule.nftset='gfwlist#4#inet'
+
+# 保存配置
+uci commit smartdns
+
+logger "SmartDNS 国内网络优化配置已应用"
+SMARTDNS_UCI
+
+chmod +x files/etc/uci-defaults/99-smartdns-optimize
+echo "DIY2 + SmartDNS optimization is complete!"
