@@ -777,6 +777,22 @@ jobs:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: release.txt
 
+      - name: Clean old releases (keep latest 3)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          echo "Cleaning old releases, keeping latest 3..."
+          releases=$(gh release list --repo ${{ github.repository }} --limit 100 --json tagName,publishedAt --jq 'sort_by(.publishedAt) | reverse | .[].tagName')
+          count=0
+          for tag in $releases; do
+            count=$((count + 1))
+            if [ $count -gt 3 ]; then
+              echo "Deleting release: $tag"
+              gh release delete "$tag" --repo ${{ github.repository }} --yes --cleanup-tag || true
+            fi
+          done
+          echo "Cleanup complete. Kept latest 3 releases."
+
   rerun-failed-jobs:
     runs-on: ubuntu-latest
     needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload, job_organize_tags]
