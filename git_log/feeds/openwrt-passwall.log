@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/ed7d31bcac2ee6268ea2182f225cd1f77ed85e07...a6b3e71dadf15910b9cc88a0a922cb606c099118)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a6b3e71d|linr|Fri Jun 19 23:19:37 2026 +0800|fix(subscribe): correctly handle Clash 'network: http' for Xray (#4403)
+</details>
