@@ -1,9 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/4b2f2b6e79d65d2a8a25223bb16defb00764e6e2...3f21d0ff3a8ee31ae1b55c56a8349846b43d2fa2)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f21d0ff3a8ee31ae1b55c56a8349846b43d2fa2...aa31a6ddd90c4b321a1dadc4eeaa27fb69431312)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3f21d0ff|ShanStone|Sun Jun 21 23:41:51 2026 +0800|luci: fix inline trailing comments for nftables IP rules (#4405)
+aa31a6dd|A-BO|Mon Jun 22 17:51:09 2026 +0800|luci: add `vivo` connection detection url option
 </details>
