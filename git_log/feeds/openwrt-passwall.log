@@ -1,9 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f21d0ff3a8ee31ae1b55c56a8349846b43d2fa2...aa31a6ddd90c4b321a1dadc4eeaa27fb69431312)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/aa31a6ddd90c4b321a1dadc4eeaa27fb69431312...bb57a136bfa8f8ffdcec3ef47c684063a5a03848)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-aa31a6dd|A-BO|Mon Jun 22 17:51:09 2026 +0800|luci: add `vivo` connection detection url option
+bb57a136|A-BO|Tue Jun 23 14:48:33 2026 +0800|luci: update default rules
+f878c5fb|A-BO|Tue Jun 23 11:14:03 2026 +0800|luci: fix realm of xray
 </details>
