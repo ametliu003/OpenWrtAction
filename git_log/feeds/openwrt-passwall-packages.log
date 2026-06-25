@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/32988422b108968a80f0ff1e8e806ad6cf28f627...f0fa6d804d8859e6febbd2714a7aabba86bbe7fa)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+f0fa6d8|David Mandy|Thu Jun 25 18:53:45 2026 +0800|sing-box: update to 1.13.14 (#680)
+</details>
