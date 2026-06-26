@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/04e003df22175801de8967bf652c43bf5ca4c303...5789ea4dff27b0ded3e123317757427c850ee2e2)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+5789ea4d|A-BO|Fri Jun 26 13:57:47 2026 +0800|luci: add hy2 gecko packet size subscribe
+c910a6b9|A-BO|Fri Jun 26 11:36:34 2026 +0800|luci: add hy2 gecko packet size setting
+</details>
