@@ -1,12 +1,10 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/f0fa6d804d8859e6febbd2714a7aabba86bbe7fa...cbc29f101ac1ea7e6942869845d64ee017102df6)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/cbc29f101ac1ea7e6942869845d64ee017102df6...36bb87d67ee1a71dc1c12058dd838211ce6ec48a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-cbc29f1|David Mandy|Sat Jun 27 22:12:18 2026 +0800|xray-core: update to 26.6.27 (#684)
-a4744c8|David Mandy|Sat Jun 27 18:51:15 2026 +0800|hysteria: update to 2.9.3 (#681)
-806ea5b|David Mandy|Sat Jun 27 18:50:52 2026 +0800|v2ray-geoip: update to 202606250051 (#683)
-5aee21f|David Mandy|Sat Jun 27 18:50:42 2026 +0800|v2ray-geosite: update to 202606262300 (#682)
+36bb87d|OrbisAI Security|Sun Jun 28 06:27:17 2026 +0530|shadowsocksr-libev: fix encrypt in encrypt.c (#653)
+b334b5e|David Mandy|Sun Jun 28 02:12:50 2026 +0800|shadowsocksr-libev: fixes mirror hash
 </details>
