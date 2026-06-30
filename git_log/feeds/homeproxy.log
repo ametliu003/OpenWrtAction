@@ -1,0 +1,10 @@
+<details> <summary> <b>homeproxy new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/homeproxy/compare/46137662e2604f7127f9382d834326579db8fb6a...e8b8ebcfbdd1759c5f7f323b5a9d32b5b5434954)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e8b8ebc|Tianling Shen|Tue Jun 30 17:00:36 2026 +0800|fix(generator/client): fix match proxy_mode in uci config stage
+41e3435|Anya Lin|Mon Jun 15 13:59:23 2026 +0800|fix(ucode): Fix the params injection issue in `singbox_generator`
+</details>

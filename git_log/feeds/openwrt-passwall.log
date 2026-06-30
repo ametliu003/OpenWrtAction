@@ -1,11 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/c79fa367970bad39bbe089376779bc66ec5610c2...f04c2c3f2fef157a200454c564d9a561cac650f3)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f04c2c3f2fef157a200454c564d9a561cac650f3...2142d1f1301bc47e661511293dda7735b7042f02)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f04c2c3f|A-BO|Mon Jun 29 20:03:07 2026 +0800|luci: update fragment new lengths/delays for xray
-2ac599d5|A-BO|Mon Jun 29 12:55:28 2026 +0800|luci: optimize trojan subscribe
-165efffb|A-BO|Sun Jun 28 23:49:04 2026 +0800|luci: optimize
+2142d1f1|A-BO|Tue Jun 30 23:47:40 2026 +0800|luci: 26.7.1
+4633ee7b|A-BO|Tue Jun 30 23:32:12 2026 +0800|luci: Disable IPv4 rp_filter for TPROXY compatibility
 </details>
