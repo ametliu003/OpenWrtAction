@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/59024567efc118e281697be064d881433e1b9e5f...22450c2a829a0326f69df370b02354e3d73c47f5)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+22450c2a|lwb1978|Sat Jul 4 19:38:53 2026 +0800|luci: fix and optimize subscribe
+</details>

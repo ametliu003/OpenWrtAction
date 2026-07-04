@@ -1,0 +1,11 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/54893c17c4593dca3a6e8bf6979e80d285b025ca...2f9cc610de8d7b0a86b15c1e84fc992f87a5b2f5)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+2f9cc610de|Tianling Shen|Wed Jun 10 16:01:44 2026 +0800|luci-app-smartdns: fix render service status
+704e542360|Tianling Shen|Tue May 26 11:03:30 2026 +0800|luci-app-smartdns: sync with upstream source
+0439e06df7|Interesting Gang|Wed Jun 3 17:28:02 2026 +0800|luci-app-passwall: bump to 26.7.1
+</details>
