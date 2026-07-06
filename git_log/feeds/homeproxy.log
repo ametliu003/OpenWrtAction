@@ -1,0 +1,12 @@
+<details> <summary> <b>homeproxy new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/homeproxy/compare/e8b8ebcfbdd1759c5f7f323b5a9d32b5b5434954...7826c263609cf413c355eea6fd8cc1255b85f5c7)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+7826c26|Tianling Shen|Mon Jul 6 10:08:03 2026 +0800|chore(resources): update geodata
+8093cd2|Tianling Shen|Mon Jul 6 09:26:43 2026 +0800|fix(migrate): fix use of unimported validation func
+98d7ab0|Wu SiYu|Sat Jun 20 01:54:31 2026 +0800|fix(generator/client): move 'rule_set_ip_cidr_accept_empty' configuration to DNS rules
+f7ad6fc|SiYu Wu|Sat Jun 20 07:40:18 2026 +0800|fix(build): use 'noarch' instead of 'all' for APK arch field
+</details>
