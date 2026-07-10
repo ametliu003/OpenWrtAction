@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3100094462e92d40bcde39980355287a94ae2ed7...225f017c54bd5384ec6af1bb36a42fc685d3d35d)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-225f017c|A-BO|Thu Jul 9 11:39:37 2026 +0800|luci: remove `none/zero/plain` for xray vmess/shadowsocks
-</details>
