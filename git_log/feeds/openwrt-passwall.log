@@ -1,11 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/225f017c54bd5384ec6af1bb36a42fc685d3d35d...adab49f79df24d759efc90c2ad3f817fa6d511bc)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/adab49f79df24d759efc90c2ad3f817fa6d511bc...a49686d188a3c8b89a854e7a45553b78507ef779)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-adab49f7|A-BO|Sat Jul 11 15:47:46 2026 +0800|luci: xray add min version limit
-7e5c8de9|A-BO|Sat Jul 11 15:34:23 2026 +0800|luci: xray add env configuration
-d6bffb73|A-BO|Sat Jul 11 14:35:52 2026 +0800|luci: add `unsafe` fingerprint to xray settings
+a49686d1|ShanStone|Sun Jul 12 22:09:57 2026 +0800|luci: typo iptables.sh
+a961328b|ShanStone|Sun Jul 12 21:38:32 2026 +0800|luci; clean up shell syntax typos
+6b9ff417|ShanStone|Sun Jul 12 21:19:27 2026 +0800|luci: enhance efficiency of insert_nftset
 </details>
