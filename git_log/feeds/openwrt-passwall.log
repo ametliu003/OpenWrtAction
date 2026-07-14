@@ -1,11 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/a49686d188a3c8b89a854e7a45553b78507ef779...bf1037ce3edf303dd8104819f7e31ba7ce280996)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/bf1037ce3edf303dd8104819f7e31ba7ce280996...7df941113c693070857dace915f3a2ffc100f052)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bf1037ce|A-BO|Mon Jul 13 16:43:17 2026 +0800|luci: add default value for xray fragment
-feb14282|A-BO|Mon Jul 13 00:47:17 2026 +0800|luci: add OR logic support to node rule matching
-6f0873c5|A-BO|Sun Jul 12 23:22:49 2026 +0800|luci: optimize and adjust
+7df94111|A-BO|Tue Jul 14 22:52:24 2026 +0800|luci: add batch backup node support for socks
 </details>
