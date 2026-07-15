@@ -1,9 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/bf1037ce3edf303dd8104819f7e31ba7ce280996...7df941113c693070857dace915f3a2ffc100f052)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7df941113c693070857dace915f3a2ffc100f052...cf8131357d7d79ef5ee650a2ea7442efff0ee0d2)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7df94111|A-BO|Tue Jul 14 22:52:24 2026 +0800|luci: add batch backup node support for socks
+cf813135|A-BO|Wed Jul 15 17:17:54 2026 +0800|luci: add ech support in trojan link sharing and subscription
+f075d6ec|A-BO|Wed Jul 15 12:59:00 2026 +0800|luci: 26.7.15
+3c107355|A-BO|Wed Jul 15 12:56:52 2026 +0800|luci: remove xray `allowInsecure`
+a44717e7|A-BO|Wed Jul 15 12:46:23 2026 +0800|luci: xray inbound reality add `minClientVer`
 </details>
