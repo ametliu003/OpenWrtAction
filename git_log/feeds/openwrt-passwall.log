@@ -1,12 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7df941113c693070857dace915f3a2ffc100f052...cf8131357d7d79ef5ee650a2ea7442efff0ee0d2)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cf8131357d7d79ef5ee650a2ea7442efff0ee0d2...3f7695d6b453a111d2ca9b8e9aa05d7e8a843b68)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-cf813135|A-BO|Wed Jul 15 17:17:54 2026 +0800|luci: add ech support in trojan link sharing and subscription
-f075d6ec|A-BO|Wed Jul 15 12:59:00 2026 +0800|luci: 26.7.15
-3c107355|A-BO|Wed Jul 15 12:56:52 2026 +0800|luci: remove xray `allowInsecure`
-a44717e7|A-BO|Wed Jul 15 12:46:23 2026 +0800|luci: xray inbound reality add `minClientVer`
+3f7695d6|A-BO|Thu Jul 16 21:40:01 2026 +0800|luci: 26.7.16
+20fd7808|handsomeji|Thu Jul 16 00:31:11 2026 +0800|luci: optimize code
+ef0df88c|A-BO|Thu Jul 16 17:21:59 2026 +0800|luci: adjust and optimize
+6770f11b|A-BO|Thu Jul 16 13:36:59 2026 +0800|luci: support manual fetch of xray hy2 `pinnedPeerCertSha256`
+c8ce288e|A-BO|Thu Jul 16 13:19:18 2026 +0800|luci: fixup
 </details>
