@@ -1,13 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cf8131357d7d79ef5ee650a2ea7442efff0ee0d2...3f7695d6b453a111d2ca9b8e9aa05d7e8a843b68)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f7695d6b453a111d2ca9b8e9aa05d7e8a843b68...678d4cdde1421f9b74385231364c385d0d14d63b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3f7695d6|A-BO|Thu Jul 16 21:40:01 2026 +0800|luci: 26.7.16
-20fd7808|handsomeji|Thu Jul 16 00:31:11 2026 +0800|luci: optimize code
-ef0df88c|A-BO|Thu Jul 16 17:21:59 2026 +0800|luci: adjust and optimize
-6770f11b|A-BO|Thu Jul 16 13:36:59 2026 +0800|luci: support manual fetch of xray hy2 `pinnedPeerCertSha256`
-c8ce288e|A-BO|Thu Jul 16 13:19:18 2026 +0800|luci: fixup
+678d4cdd|A-BO|Fri Jul 17 13:25:44 2026 +0800|luci: adjust code
 </details>
