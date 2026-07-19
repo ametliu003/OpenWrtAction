@@ -1,11 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/678d4cdde1421f9b74385231364c385d0d14d63b...5d8f411a8728a6062d2d789ccd310d886209e588)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/5d8f411a8728a6062d2d789ccd310d886209e588...3e3cf508b51f190397799b858dd7e0b008972d9c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5d8f411a|ShanStone|Sat Jul 18 21:20:27 2026 +0800|luci: optimise nftset timeout (#4427)
-b6d5443b|A-BO|Sat Jul 18 01:20:24 2026 +0800|luci: adjust nftables `drop` to `reject`
-49175d02|A-BO|Fri Jul 17 23:28:07 2026 +0800|luci: add `HappyEyeballs` for xray
+3e3cf508|A-BO|Sun Jul 19 15:50:09 2026 +0800|luci: adjust nftables environment dependency check
+bd0b58aa|handsomeji|Sun Jul 19 15:05:01 2026 +0800|luci: adjust iptables `drop` to `reject`
+b8bb676b|A-BO|Sun Jul 19 15:01:29 2026 +0800|luci: update default rules
+d4b2a510|wybb|Sun Jul 19 00:06:48 2026 +0800|luci: add server startup delay setting (#4429)
 </details>
