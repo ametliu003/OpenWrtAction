@@ -1,12 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/5d8f411a8728a6062d2d789ccd310d886209e588...3e3cf508b51f190397799b858dd7e0b008972d9c)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3e3cf508b51f190397799b858dd7e0b008972d9c...a26ccb26cb520219c1afc7fb3cfd6d267e350c74)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3e3cf508|A-BO|Sun Jul 19 15:50:09 2026 +0800|luci: adjust nftables environment dependency check
-bd0b58aa|handsomeji|Sun Jul 19 15:05:01 2026 +0800|luci: adjust iptables `drop` to `reject`
-b8bb676b|A-BO|Sun Jul 19 15:01:29 2026 +0800|luci: update default rules
-d4b2a510|wybb|Sun Jul 19 00:06:48 2026 +0800|luci: add server startup delay setting (#4429)
+a26ccb26|A-BO|Mon Jul 20 20:06:30 2026 +0800|luci: Adjust the fakedns logic of the DNS component
+73cd7a97|A-BO|Mon Jul 20 11:06:45 2026 +0800|luci: rename xray `network` to `method`
 </details>
