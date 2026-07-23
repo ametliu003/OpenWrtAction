@@ -1,11 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d01124122f885f29fda4de6adcbd64a7f4a3c554...3e525ad22f6c76f6be626963974c42924cb64770)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3e525ad22f6c76f6be626963974c42924cb64770...3fdfb25dbec7c6240ddf6d207491696e1bcafb2a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3e525ad2|A-BO|Wed Jul 22 22:11:59 2026 +0800|luci: add `disable-reuse` option for anytls
-3db89c69|A-BO|Wed Jul 22 21:27:50 2026 +0800|luci: optimize anytls subscription
-804dcf7f|A-BO|Wed Jul 22 12:55:08 2026 +0800|luci: optimize xray balancing logic
+3fdfb25d|A-BO|Thu Jul 23 18:01:17 2026 +0800|luci: optimize clash subconverter
+e9c05acf|A-BO|Thu Jul 23 11:24:18 2026 +0800|luci: optimize
 </details>
