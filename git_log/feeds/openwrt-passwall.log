@@ -1,10 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3e525ad22f6c76f6be626963974c42924cb64770...3fdfb25dbec7c6240ddf6d207491696e1bcafb2a)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3fdfb25dbec7c6240ddf6d207491696e1bcafb2a...ae5d8e9d62761b68763d405d1d293d009d510a01)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3fdfb25d|A-BO|Thu Jul 23 18:01:17 2026 +0800|luci: optimize clash subconverter
-e9c05acf|A-BO|Thu Jul 23 11:24:18 2026 +0800|luci: optimize
+ae5d8e9d|A-BO|Fri Jul 24 10:55:42 2026 +0800|luci: 26.7.24
+1287338f|A-BO|Fri Jul 24 10:40:56 2026 +0800|luci: adjust the logic of socks auto switch
 </details>
