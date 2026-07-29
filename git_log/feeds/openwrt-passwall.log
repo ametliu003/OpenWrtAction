@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/edbf910e5a6c91addca7e4de53f501b4e0b2ee61...636c72181fae7833c4c08f161897ce5fef075c67)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+636c7218|A-BO|Wed Jul 29 20:50:06 2026 +0800|Revert "luci: add `disable-reuse` option for anytls"
+</details>
