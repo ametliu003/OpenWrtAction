@@ -1,12 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/fbc8c1fbae9515ad344b6e9e7238f35ef9ab143c...a2989df1868c517cc330aa007e1b9987683d0535)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/a2989df1868c517cc330aa007e1b9987683d0535...6b97e65c5111289919aa2d01a389191dd4f0683c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-a2989df1|A-BO|Fri Aug 7 21:51:00 2026 +0800|luci: dnsmasq supports geosite parsing
-65360259|A-BO|Fri Aug 7 13:39:51 2026 +0800|luci: optimize dns related code
-0c986270|A-BO|Fri Aug 7 02:24:44 2026 +0800|luci: fixup in `iptables`
-08e44e62|A-BO|Fri Aug 7 01:49:05 2026 +0800|luci: optimize route rules for shunt node in gfw mode
+6b97e65c|A-BO|Sat Aug 8 22:24:37 2026 +0800|luci: fix shunt node fakedns logic
+0f7b49c3|A-BO|Sat Aug 8 13:20:32 2026 +0800|luci: optimize shunt rules group
+2d658cae|A-BO|Sat Aug 8 12:54:15 2026 +0800|luci: shunt rules support group and optimize code
+8ac81b1b|A-BO|Sat Aug 8 03:06:54 2026 +0800|luci: refactor socks auto switch logic
 </details>
