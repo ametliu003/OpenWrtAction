@@ -1,12 +1,19 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/a2989df1868c517cc330aa007e1b9987683d0535...6b97e65c5111289919aa2d01a389191dd4f0683c)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/6b97e65c5111289919aa2d01a389191dd4f0683c...ba6d052cfa91ecc820f959331707acdd803abafa)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6b97e65c|A-BO|Sat Aug 8 22:24:37 2026 +0800|luci: fix shunt node fakedns logic
-0f7b49c3|A-BO|Sat Aug 8 13:20:32 2026 +0800|luci: optimize shunt rules group
-2d658cae|A-BO|Sat Aug 8 12:54:15 2026 +0800|luci: shunt rules support group and optimize code
-8ac81b1b|A-BO|Sat Aug 8 03:06:54 2026 +0800|luci: refactor socks auto switch logic
+ba6d052c|A-BO|Sun Aug 9 21:15:59 2026 +0800|luci: simplify code
+ae9a5962|A-BO|Sun Aug 9 18:29:07 2026 +0800|luci: optimize
+9206fc62|A-BO|Sun Aug 9 15:01:36 2026 +0800|luci: `gen_short_uuid()` -> `gen_random_char()`
+dae882ee|A-BO|Sun Aug 9 14:38:10 2026 +0800|luci: optimize detail
+1fb8c913|A-BO|Sun Aug 9 13:42:53 2026 +0800|luci: add `cipherSuites` option
+d3b609c8|A-BO|Sun Aug 9 12:20:05 2026 +0800|luci: fix `rule_update`
+00d8978b|A-BO|Sun Aug 9 12:15:31 2026 +0800|luci: subscribe_list does not use anonymous id
+ce9df857|A-BO|Sun Aug 9 11:58:31 2026 +0800|luci: acl_rule does not use anonymous id
+320cc59b|A-BO|Sun Aug 9 03:25:47 2026 +0800|luci: fix socks
+1646e0a0|A-BO|Sun Aug 9 01:19:21 2026 +0800|luci: section cfgid add prefix
+f6476672|A-BO|Sun Aug 9 00:27:39 2026 +0800|luci: optimize code
 </details>
