@@ -1,0 +1,11 @@
+<details> <summary> <b>homeproxy new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/homeproxy/compare/4b2617ab3bc67e802236b74ce16e70e3bde456da...edece28a0085f36d469ec82c8d45f562f602db53)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+edece28|Tianling Shen|Tue Aug 11 14:38:48 2026 +0800|chore(resources): update geodata
+1c265ac|Stefan|Tue Aug 11 14:27:15 2026 +0800|fix(view/node): correct socks5 scheme typo in share link import
+00ddc99|JiaY-shi|Fri Aug 7 15:43:37 2026 +0800|fix(ucode): replace removed init_action
+</details>
