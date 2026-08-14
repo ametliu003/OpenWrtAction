@@ -1,13 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cded06e8ed1197e3e3ad18cd87d36030ff47073e...d87e3433d397a380f64072d570881c6dbe28059c)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d87e3433d397a380f64072d570881c6dbe28059c...adae5fb48b5c0caa7300f1e040bfdbd9c9d84131)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d87e3433|A-BO|Thu Aug 13 22:00:10 2026 +0800|luci: server: add duplicate username validation
-7da42ff4|A-BO|Thu Aug 13 20:27:49 2026 +0800|luci: server: update
-ba02ff03|A-BO|Thu Aug 13 15:28:38 2026 +0800|luci: server: rename sectiontype
-1f283f27|A-BO|Wed Aug 12 20:44:49 2026 +0800|luci: optimize the node list and shunt rule list sort logic
-cded06e8|A-BO|Wed Aug 12 20:44:49 2026 +0800|luci: optimize and fix shunt rule list
+adae5fb4|handsomeji|Thu Aug 13 18:36:36 2026 +0800|luci: optimize code
+ed01e699|bruceliu1388|Fri Aug 14 00:33:15 2026 +0800|luci: fix: don't prefix literal /dev/null log_file with TMP_PATH (#4448)
+49556cb1|A-BO|Fri Aug 14 00:27:48 2026 +0800|luci: optimize dnsmasq related
 </details>
