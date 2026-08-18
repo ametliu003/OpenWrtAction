@@ -1,13 +1,17 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/6a749d1bc19f6177ff2e4c98e8cd49d4535476d0...07ca9229fe5860379ff8746e178a0b33de1c4ced)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/07ca9229fe5860379ff8746e178a0b33de1c4ced...2eb2b7e613bcde8e980e3ec5ffb836e2fb9769f5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+2eb2b7e6|A-BO|Tue Aug 18 20:26:54 2026 +0800|luci: optimize and fix subscribe code
+42348820|A-BO|Mon Aug 17 22:25:54 2026 +0800|luci: optimize code
+85d7d117|wybb|Mon Aug 17 08:54:14 2026 +0800|luci: migrate legacy HAProxy health check type (#4451)
+2ba5b8a0|A-BO|Mon Aug 17 08:49:46 2026 +0800|luci: socks sortable
+6522d474|A-BO|Mon Aug 17 08:40:12 2026 +0800|luci: adjust delete node the socks logic
 07ca9229|wybb|Mon Aug 17 08:54:14 2026 +0800|luci: migrate legacy HAProxy health check type (#4451)
 0b1eca89|A-BO|Mon Aug 17 08:49:46 2026 +0800|luci: socks sortable
 b166d45c|A-BO|Mon Aug 17 08:40:12 2026 +0800|luci: adjust delete node the socks logic
 b30aa098|A-BO|Mon Aug 17 08:21:21 2026 +0800|luci: remove naive core
-4a296cd4|A-BO|Sun Aug 16 23:12:54 2026 +0800|luci: optimize code
 </details>
