@@ -1,10 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/48f02599ff70318c0014a88a75f5a06067545071...f91f3e5f22f514edb83216fa1deeab988c6e0cd5)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f91f3e5f22f514edb83216fa1deeab988c6e0cd5...98896d195d30a677fec761ce8507461027f91e70)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f91f3e5f|A-BO|Wed Aug 19 22:56:50 2026 +0800|luci: 26.8.19-2
-ea0bdbfb|A-BO|Wed Aug 19 22:53:48 2026 +0800|luci: fixup
+98896d19|A-BO|Thu Aug 20 23:39:09 2026 +0800|luci: restart after NTP time becomes valid on RTC-less devices
+2be58b89|A-BO|Thu Aug 20 23:20:41 2026 +0800|luci: server: sing-box add missing users code
 </details>
