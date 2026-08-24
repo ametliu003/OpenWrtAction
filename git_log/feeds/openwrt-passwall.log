@@ -1,16 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/98896d195d30a677fec761ce8507461027f91e70...7ef73f081cc7bdf2b199952f0f07625bf7382437)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7ef73f081cc7bdf2b199952f0f07625bf7382437...ec2b4e58b93e3a46dcf5679b98e9854ce1716dab)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7ef73f08|A-BO|Sun Aug 23 21:54:58 2026 +0800|luci: server: use UCI config instead of firewall rules
-bc835e92|A-BO|Sun Aug 23 21:17:32 2026 +0800|luci: compatible with some themes
-c83f0431|A-BO|Sun Aug 23 20:23:44 2026 +0800|luci: optimize socks list status display
-7f44fe7a|A-BO|Sun Aug 23 16:43:00 2026 +0800| luci: adjust code
-c89cec73|A-BO|Sun Aug 23 16:16:55 2026 +0800|luci: fix when routing rules is null
-3355824f|A-BO|Sun Aug 23 14:07:22 2026 +0800|luci: disallow empty or zero socks port
-15ba20e1|A-BO|Sun Aug 23 13:47:08 2026 +0800|luci: optimize node application logic in the node list
-ef6edba0|A-BO|Sun Aug 23 01:12:00 2026 +0800|luci: merge `TCP` and `UDP` node
+ec2b4e58|A-BO|Mon Aug 24 22:29:54 2026 +0800|luci: code format
+8b66690f|A-BO|Mon Aug 24 20:59:54 2026 +0800|luci: normalize text files to LF
+56a4939c|A-BO|Mon Aug 24 20:52:14 2026 +0800|luci: add .gitattributes
+5e207af8|A-BO|Mon Aug 24 16:43:42 2026 +0800|luci: fixup
 </details>
