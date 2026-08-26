@@ -1,9 +1,9 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/3a0e732472ba6b0476bd974a01cdb7930e13f7fe...7020e88fd2fdb67f6d934a97f1c136c5dc81e1f3)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/7020e88fd2fdb67f6d934a97f1c136c5dc81e1f3...1d34e7b88708d4eeb3feabe0b2b6f835a909c9c0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7020e88fd2|Tianling Shen|Tue Aug 25 09:31:59 2026 +0800|kernel: refresh fmsh patches
+1d34e7b887|Tianling Shen|Wed Aug 26 09:56:37 2026 +0800|mediatek: fix merge conflict
 </details>

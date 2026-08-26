@@ -1,11 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/ec2b4e58b93e3a46dcf5679b98e9854ce1716dab...78aed603195e63a96ff70bdbb212ee3e8620725e)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/78aed603195e63a96ff70bdbb212ee3e8620725e...f2330bb1f9201fa0eee4369121ae35a9e35e0135)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-78aed603|A-BO|Tue Aug 25 11:34:52 2026 +0800|luci: fix socks
-68b91e0c|A-BO|Tue Aug 25 01:44:03 2026 +0800|luci: optimize socks node
-cfab3756|David Mandy|Mon Aug 24 23:26:28 2026 +0800|luci: fixed the issue where the server-side firewall was not refreshing. Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+f2330bb1|David Mandy|Wed Aug 26 16:21:50 2026 +0800|luci: Fixed an issue with refreshing server-side firewall rules
+548a6e45|A-BO|Wed Aug 26 00:33:15 2026 +0800|luci: 26.8.26
+0be900dd|A-BO|Wed Aug 26 00:28:40 2026 +0800|luci: optimize dnsmasq
 </details>
