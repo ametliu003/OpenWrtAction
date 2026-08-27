@@ -1,11 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/78aed603195e63a96ff70bdbb212ee3e8620725e...f2330bb1f9201fa0eee4369121ae35a9e35e0135)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f2330bb1f9201fa0eee4369121ae35a9e35e0135...d3ed7d7d4e59b2a8d5826da40b45977e833987a4)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f2330bb1|David Mandy|Wed Aug 26 16:21:50 2026 +0800|luci: Fixed an issue with refreshing server-side firewall rules
-548a6e45|A-BO|Wed Aug 26 00:33:15 2026 +0800|luci: 26.8.26
-0be900dd|A-BO|Wed Aug 26 00:28:40 2026 +0800|luci: optimize dnsmasq
+d3ed7d7d|A-BO|Thu Aug 27 23:56:18 2026 +0800|luci: optimize the geoview cache cleanup logic
+e1c877d7|A-BO|Thu Aug 27 22:26:10 2026 +0800|luci: optimize rule update logic
+04be41df|A-BO|Thu Aug 27 20:25:15 2026 +0800|luci: fix IPv6 DNS
+244af3d5|A-BO|Thu Aug 27 16:36:23 2026 +0800|luci: optimize firewall filter vpsip
+06c016b9|A-BO|Thu Aug 27 01:04:06 2026 +0800|luci: improved js luci logic
 </details>
