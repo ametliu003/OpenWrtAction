@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/a8302d598ca54cda22f7fe76fa553b3df034f8ae...e13e4631699ef9f0e826d36d3be56a67a82924c9)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-e13e463|David Mandy|Thu Aug 27 03:48:01 2026 +0800|shadowsocks-rust: update to 1.25.0 (#714)
-</details>
