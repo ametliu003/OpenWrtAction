@@ -1,13 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d3ed7d7d4e59b2a8d5826da40b45977e833987a4...93695ef46ceeff07bb8275c5b0c35192db5922e1)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/93695ef46ceeff07bb8275c5b0c35192db5922e1...bbd098938427249f06f644341bfb916bad5cab5c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-93695ef4|lwb1978|Sat Aug 29 02:24:49 2026 +0800|luci: optimize filter node ip
-3438bb2b|A-BO|Fri Aug 28 16:52:46 2026 +0800|luci: set sing-box fakedns `remote_rewrite_ttl` to fixed 30s
-cb25935e|A-BO|Fri Aug 28 13:20:34 2026 +0800|luci: Fix sniffing excluded domains in xray
-06815f9f|A-BO|Fri Aug 28 09:53:47 2026 +0800|luci: support hysteria2 realm `portMapping`
-b7de80c3|A-BO|Fri Aug 28 08:56:17 2026 +0800|luci: support hysteria2 ech
+bbd09893|A-BO|Sat Aug 29 22:38:05 2026 +0800|luci: enhance backup and restore functionality
 </details>
