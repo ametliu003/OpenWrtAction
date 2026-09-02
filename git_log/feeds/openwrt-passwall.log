@@ -1,11 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2155bdc22b9ace9225207de263de27ef849d57e8...56adb0e2cbcf17e419524d46841d77a79474f327)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/56adb0e2cbcf17e419524d46841d77a79474f327...8347d3034f2ec6ef87dd1eca41a93017ae85fc4e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-56adb0e2|A-BO|Tue Sep 1 10:40:58 2026 +0800|luci: 26.9.1
-5acbe52d|A-BO|Tue Sep 1 10:38:38 2026 +0800|luci: update WeChat C2C Xray domain exclusion to regex
-41a38af7|A-BO|Tue Sep 1 10:14:33 2026 +0800|luci: update default rules
+8347d303|A-BO|Wed Sep 2 21:52:52 2026 +0800|luci: add snell with Sing-Box v1.14.0
+0572d47c|A-BO|Wed Sep 2 21:20:59 2026 +0800|luci: optimize
+4245ff30|A-BO|Wed Sep 2 21:02:54 2026 +0800|luci: add `http client` in sing-box
+15de1532|A-BO|Wed Sep 2 20:36:29 2026 +0800|luci: clean up code
+7bfd1739|A-BO|Wed Sep 2 11:20:17 2026 +0800|luci: fix geo view
 </details>
