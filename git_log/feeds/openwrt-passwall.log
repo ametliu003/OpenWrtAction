@@ -1,11 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cc3c6153399ab6e1fe36d62e29cf8bdcdd3b45c6...ac4b1e7821ffc79f0d3467472fb56dfaf5274913)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/ac4b1e7821ffc79f0d3467472fb56dfaf5274913...92714cdb2eb613fbab195f8b6005b9b1d9843294)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ac4b1e78|lwb1978|Mon Sep 7 18:18:52 2026 +0800|luci: add version marker to backup files
-883fb112|lwb1978|Mon Sep 7 17:16:32 2026 +0800|luci: optimize
-1bbd88a5|lwb1978|Mon Sep 7 14:29:34 2026 +0800|luci: Add DoT and DoQ support to sing-box DNS
+92714cdb|A-BO|Wed Sep 9 00:05:44 2026 +0800|luci: 26.9.9
+dbd89ac9|A-BO|Tue Sep 8 23:31:45 2026 +0800|luci: migrate xray `freedom.domainStrategy` to `sockopt.domainStrategy`
+0db5c7b2|lwb1978|Tue Sep 8 14:02:31 2026 +0800|luci: migrate xray dns outbound `proxySettings` to `dialerProxy`
+4237339b|lwb1978|Tue Sep 8 12:02:54 2026 +0800|luci: Cache LuCI version
+436d9d44|lwb1978|Tue Sep 8 11:13:11 2026 +0800|luci: adjust hosts dns rule for sing-box 1.14
 </details>
