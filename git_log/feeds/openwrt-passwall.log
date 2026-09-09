@@ -1,13 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/ac4b1e7821ffc79f0d3467472fb56dfaf5274913...92714cdb2eb613fbab195f8b6005b9b1d9843294)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/92714cdb2eb613fbab195f8b6005b9b1d9843294...1fa80eab0c289d6547eaeaf4169a17b4eba28acf)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-92714cdb|A-BO|Wed Sep 9 00:05:44 2026 +0800|luci: 26.9.9
-dbd89ac9|A-BO|Tue Sep 8 23:31:45 2026 +0800|luci: migrate xray `freedom.domainStrategy` to `sockopt.domainStrategy`
-0db5c7b2|lwb1978|Tue Sep 8 14:02:31 2026 +0800|luci: migrate xray dns outbound `proxySettings` to `dialerProxy`
-4237339b|lwb1978|Tue Sep 8 12:02:54 2026 +0800|luci: Cache LuCI version
-436d9d44|lwb1978|Tue Sep 8 11:13:11 2026 +0800|luci: adjust hosts dns rule for sing-box 1.14
+1fa80eab|A-BO|Wed Sep 9 14:51:34 2026 +0800|luci: Xray Refactor proxy settings to use dialer_proxy_tag
+b428429b|A-BO|Wed Sep 9 14:43:46 2026 +0800|luci: optimize
 </details>
