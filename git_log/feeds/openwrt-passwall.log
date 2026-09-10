@@ -1,10 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/92714cdb2eb613fbab195f8b6005b9b1d9843294...1fa80eab0c289d6547eaeaf4169a17b4eba28acf)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/1fa80eab0c289d6547eaeaf4169a17b4eba28acf...7bea83787a431fd8816ae744cb4ffa8900f4bfe7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1fa80eab|A-BO|Wed Sep 9 14:51:34 2026 +0800|luci: Xray Refactor proxy settings to use dialer_proxy_tag
-b428429b|A-BO|Wed Sep 9 14:43:46 2026 +0800|luci: optimize
+7bea8378|A-BO|Thu Sep 10 21:43:40 2026 +0800|luci: adjust backend logic when ACL logging is enabled
+c63adab5|A-BO|Thu Sep 10 20:03:35 2026 +0800|luci: improvement and optimization
+24f2e277|A-BO|Thu Sep 10 04:31:23 2026 +0800|luci: adjust and optimize acl
 </details>
