@@ -1,13 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7bea83787a431fd8816ae744cb4ffa8900f4bfe7...fd22472beec37d9ff1839c01a2e0eeae991cfe63)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/fd22472beec37d9ff1839c01a2e0eeae991cfe63...335e506915bb32bc9d5085faf77de29ad4acdd6c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-fd22472b|A-BO|Sat Sep 12 00:17:30 2026 +0800|luci: improve IP address matching
-8b41876a|A-BO|Fri Sep 11 22:05:38 2026 +0800|luci: fix theme compatibility for node select template
-6a5074e5|A-BO|Fri Sep 11 13:36:32 2026 +0800|luci: optimize
-f512e2eb|ThornsW|Fri Sep 11 10:48:20 2026 +0800|luci: fix: add mwan3 exemption rule via iptables-nft instead of native nft (#4466)
-cbf18a69|A-BO|Fri Sep 11 02:14:35 2026 +0800|luci: fix share link import
+335e5069|A-BO|Sat Sep 12 17:07:06 2026 +0800|luci: update sing-box hysteria configuration fields
+a486d3e8|A-BO|Sat Sep 12 16:54:47 2026 +0800|luci: fix tls configuration for http protocol
+f07a97f3|A-BO|Sat Sep 12 11:55:57 2026 +0800|luci: improvement and fix
 </details>
