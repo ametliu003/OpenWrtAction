@@ -1,13 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/335e506915bb32bc9d5085faf77de29ad4acdd6c...3f4c9ce7fc507ba277a1c13af1aea046cae3f9d9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f4c9ce7fc507ba277a1c13af1aea046cae3f9d9...2dcb54e20c7cc8daca764dbd7c964d659b30af9b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3f4c9ce7|lwb1978|Mon Sep 14 01:11:02 2026 +0800|luci: improvement and optimization
-fbae2d5e|lwb1978|Mon Sep 14 00:10:02 2026 +0800|luci: optimize nftables dns redirect logic
-cdbcb721|yiyuanlu|Sun Sep 13 10:39:33 2026 +0800|luci: restrict iptables DIVERT hooks to transparent sockets (#4470)
-851669ab|A-BO|Sat Sep 12 17:07:06 2026 +0800|luci: update sing-box hysteria configuration fields
-335e5069|A-BO|Sat Sep 12 17:07:06 2026 +0800|luci: update sing-box hysteria configuration fields
+2dcb54e2|lwb1978|Tue Sep 15 00:51:47 2026 +0800|luci: fixup
+673a1718|lwb1978|Tue Sep 15 00:33:20 2026 +0800|luci: adjust and optimize
+6455adc8|lwb1978|Mon Sep 14 22:39:55 2026 +0800|luci: demo port for special node export config
+0bfbdc72|lwb1978|Mon Sep 14 14:56:15 2026 +0800|luci: optimize NTP time adjustment handling
+1178f18f|lwb1978|Mon Sep 14 14:52:09 2026 +0800|luci: set minimum Xray version to 26.7.11
+949269b9|lwb1978|Mon Sep 14 13:54:58 2026 +0800|luci: adjust and optimize log
 </details>
