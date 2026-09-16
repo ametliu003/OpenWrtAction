@@ -1,11 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2dcb54e20c7cc8daca764dbd7c964d659b30af9b...7321bb79cb5719d8ddf144d034e3ecd962c68a09)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7321bb79cb5719d8ddf144d034e3ecd962c68a09...9ea7d79c1e3c415548bbb45f6b184e8f5574923a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7321bb79|lwb1978|Tue Sep 15 23:41:00 2026 +0800|luci: optimize dns redirect logic
-f8e8b256|lwb1978|Tue Sep 15 21:33:06 2026 +0800|luci: optimize component executable path settings
-88e6c9c1|lwb1978|Tue Sep 15 14:14:03 2026 +0800|luci: optimize
+9ea7d79c|lwb1978|Wed Sep 16 14:42:19 2026 +0800|luci: bump 26.9.16
+312c3cf7|lwb1978|Wed Sep 16 14:33:59 2026 +0800|luci: simplify sing-box WebSocket transport settings
 </details>
