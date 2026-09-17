@@ -1,10 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7321bb79cb5719d8ddf144d034e3ecd962c68a09...9ea7d79c1e3c415548bbb45f6b184e8f5574923a)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9ea7d79c1e3c415548bbb45f6b184e8f5574923a...1fff41902b311a3ade7d04bfe9875a070ab06970)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9ea7d79c|lwb1978|Wed Sep 16 14:42:19 2026 +0800|luci: bump 26.9.16
-312c3cf7|lwb1978|Wed Sep 16 14:33:59 2026 +0800|luci: simplify sing-box WebSocket transport settings
+1fff4190|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
 </details>

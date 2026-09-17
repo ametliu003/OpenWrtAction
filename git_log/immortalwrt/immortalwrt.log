@@ -1,0 +1,9 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/3a0f609352e0b582fc670af865ad449a65b18e62...83ad2e38484097a9c99c2af2ccbda81cac020e34)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+83ad2e3848|Tianling Shen|Thu Sep 17 09:35:45 2026 +0800|uboot-mediatek: reduce ram freq to 1866 MT/s for Cetron CT3003
+</details>
