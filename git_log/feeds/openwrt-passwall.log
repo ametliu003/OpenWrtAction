@@ -1,9 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9ea7d79c1e3c415548bbb45f6b184e8f5574923a...1fff41902b311a3ade7d04bfe9875a070ab06970)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/1fff41902b311a3ade7d04bfe9875a070ab06970...8bdf9c6017b8d878f4d7d692a163aefa4c764c7b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+8bdf9c60|lwb1978|Fri Sep 18 15:46:00 2026 +0800|luci: add snell subscribe and import/export
+6226c1eb|lwb1978|Fri Sep 18 11:47:18 2026 +0800|luci: fix the translation
+611e873e|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
 1fff4190|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
 </details>
