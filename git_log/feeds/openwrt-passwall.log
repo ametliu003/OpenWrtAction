@@ -1,12 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/1fff41902b311a3ade7d04bfe9875a070ab06970...8bdf9c6017b8d878f4d7d692a163aefa4c764c7b)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/8bdf9c6017b8d878f4d7d692a163aefa4c764c7b...d286b0f1a55f505e56b5aac6593ba8005a75db23)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8bdf9c60|lwb1978|Fri Sep 18 15:46:00 2026 +0800|luci: add snell subscribe and import/export
-6226c1eb|lwb1978|Fri Sep 18 11:47:18 2026 +0800|luci: fix the translation
-611e873e|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
-1fff4190|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
+d286b0f1|A-BO|Sun Sep 20 00:38:00 2026 +0800|luci: fix xray mkcp field typo
+d6658327|A-BO|Sun Sep 20 00:32:07 2026 +0800|luci: hide custom option in user dropdown
+4ddbe980|A-BO|Sun Sep 20 00:31:37 2026 +0800|luci: Fixed /tmp/etc/dnsmasq.conf.cfg01411c: No such file or directory
+9c641574|A-BO|Sat Sep 19 18:39:58 2026 +0800|luci: improvement and optimization
+4dd01eb4|A-BO|Sat Sep 19 01:47:26 2026 +0800|luci: server: revise certificate and private key wording
 </details>
