@@ -1,14 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d286b0f1a55f505e56b5aac6593ba8005a75db23...4e56af423bb0aa916afa023d3eeeaad85b24d52a)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/4e56af423bb0aa916afa023d3eeeaad85b24d52a...70761ef13d98cf08161e7d80d15737c8b76b264b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4e56af42|Jackie Han|Sun Sep 20 18:23:01 2026 +0800|luci: Implement retry logic for dnsmasq config file
-cb215ae5|A-BO|Sun Sep 20 13:25:10 2026 +0800|luci: optimize
-d074d130|A-BO|Sun Sep 20 11:15:29 2026 +0800|luci: adjust detail
-072eb196|A-BO|Sun Sep 20 00:38:00 2026 +0800|luci: fix xray mkcp field typo
-d286b0f1|A-BO|Sun Sep 20 00:38:00 2026 +0800|luci: fix xray mkcp field typo
-d6658327|A-BO|Sun Sep 20 00:32:07 2026 +0800|luci: hide custom option in user dropdown
+70761ef1|A-BO|Mon Sep 21 21:29:52 2026 +0800|luci: support SS ShadowTLS SIP003 URI subscribe
 </details>
