@@ -1,9 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/4e56af423bb0aa916afa023d3eeeaad85b24d52a...70761ef13d98cf08161e7d80d15737c8b76b264b)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/70761ef13d98cf08161e7d80d15737c8b76b264b...8043c1fbb18bd268dfb2667e1442da1f2a126621)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-70761ef1|A-BO|Mon Sep 21 21:29:52 2026 +0800|luci: support SS ShadowTLS SIP003 URI subscribe
+8043c1fb|A-BO|Tue Sep 22 20:30:33 2026 +0800|luci: improve Base64 decoding
 </details>
