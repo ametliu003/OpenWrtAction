@@ -1,11 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/8043c1fbb18bd268dfb2667e1442da1f2a126621...e72dc6245743adb78854ea51560643ff0dd8bae3)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/e72dc6245743adb78854ea51560643ff0dd8bae3...db7a6f0ae221dd80e7c68cb89e97bca31fd0844d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e72dc624|A-BO|Thu Sep 24 00:26:10 2026 +0800|luci: optimize firewall `update_wan_sets`
-75d166ab|A-BO|Wed Sep 23 22:21:54 2026 +0800|luci: optimize subscribe User-Agent
-2cb51eaf|A-BO|Wed Sep 23 22:09:47 2026 +0800|luci: support Shadowrocket VMess URI
+db7a6f0a|A-BO|Fri Sep 25 01:22:38 2026 +0800| ci: update code
+0086f8bc|A-BO|Thu Sep 24 18:01:19 2026 +0800|luci: optimize log
 </details>
