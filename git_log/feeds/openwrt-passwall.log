@@ -1,10 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/e72dc6245743adb78854ea51560643ff0dd8bae3...db7a6f0ae221dd80e7c68cb89e97bca31fd0844d)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/db7a6f0ae221dd80e7c68cb89e97bca31fd0844d...c139608d2f23da49946f3d3c4e69d051f261948c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-db7a6f0a|A-BO|Fri Sep 25 01:22:38 2026 +0800| ci: update code
-0086f8bc|A-BO|Thu Sep 24 18:01:19 2026 +0800|luci: optimize log
+c139608d|A-BO|Sat Sep 26 01:26:06 2026 +0800|luci: fix dns redirect
+d35badf3|A-BO|Sat Sep 26 00:56:37 2026 +0800|luci: add `certificate_sha256` for sing-box (>=1.15)
+792d9d00|Mita Hill|Fri Sep 25 22:30:17 2026 +0800|luci: fix Xray config generation crash with inbound filtering (#4483)
+a941a0cd|Mita Hill|Fri Sep 25 22:27:52 2026 +0800|luci: fix duplicate loopback tags when Xray load balancing is used as a chain proxy (#4482)
+8b4bceac|A-BO|Fri Sep 25 18:13:01 2026 +0800|luci: fix #4481
+36ee8a0a|Mita Hill|Fri Sep 25 15:47:05 2026 +0800|luci: fix URLTest pre-proxy rules skipping the outbound node (#4480)
+49fee66b|Mita Hill|Fri Sep 25 12:32:07 2026 +0800|luci: Fix : Issue:#4478 (#4479)
 </details>
