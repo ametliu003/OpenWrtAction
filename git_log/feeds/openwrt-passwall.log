@@ -1,13 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/c139608d2f23da49946f3d3c4e69d051f261948c...9f4ff7ade97095d302414f08318c6822fd203d04)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9f4ff7ade97095d302414f08318c6822fd203d04...6b3c321c774adf9b3a890c977c6738850933c645)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+6b3c321c|A-BO|Mon Sep 28 00:50:35 2026 +0800|luci: Change FakeIPv6Pool to 2001:2::/48
+25042064|A-BO|Sun Sep 27 21:31:22 2026 +0800|luci: optimize lock cleanup logic
+69679d77|A-BO|Sun Sep 27 15:15:16 2026 +0800|luci: bump 26.9.27
+1d1a6b52|A-BO|Sun Sep 27 15:05:34 2026 +0800|luci: migrate rules list to `/etc/passwall/rules`
+f835f6b7|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls/Tuic/Hy2 support `pinSHA256` subscribe for Sing-box
 9f4ff7ad|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls/Tuic/Hy2 support `pinSHA256` subscribe for Sing-box
 453fc10a|Mita Hill|Sat Sep 26 16:22:56 2026 +0800|luci: fix LAN IPv6 list overlapping the FakeIP address pool (#4484)
-f5979266|A-BO|Sat Sep 26 12:23:24 2026 +0800|luci: bump 26.9.26
-7e46234a|A-BO|Sat Sep 26 12:21:35 2026 +0800|luci: update default proxy host list
-2d195b29|A-BO|Sat Sep 26 11:42:33 2026 +0800|luci: optimize hysteria2 `pinSHA256`
 </details>
