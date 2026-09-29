@@ -1,13 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/6b3c321c774adf9b3a890c977c6738850933c645...7b3d8efc2e1b9b2d6d78a078aea5961dd9c99a08)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7b3d8efc2e1b9b2d6d78a078aea5961dd9c99a08...b882d8f1b3d47082a1c13497900b80896c1dfb17)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7b3d8efc|A-BO|Mon Sep 28 16:30:09 2026 +0800|luci: optimize cron
-ab8102d1|A-BO|Mon Sep 28 00:50:35 2026 +0800|luci: Change FakeIPv6Pool to 2001:2::/48
-082d37c7|A-BO|Sun Sep 27 21:31:22 2026 +0800|luci: optimize lock cleanup logic
-6b3c321c|A-BO|Mon Sep 28 00:50:35 2026 +0800|luci: Change FakeIPv6Pool to 2001:2::/48
-25042064|A-BO|Sun Sep 27 21:31:22 2026 +0800|luci: optimize lock cleanup logic
+b882d8f1|A-BO|Wed Sep 30 00:53:48 2026 +0800|luci: adjusted the dnsmasq cache hash calculation logic
+44e821a2|A-BO|Tue Sep 29 10:22:04 2026 +0800|luci: support subscription cookies
 </details>
