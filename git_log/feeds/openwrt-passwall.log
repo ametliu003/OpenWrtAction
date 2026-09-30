@@ -1,10 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/7b3d8efc2e1b9b2d6d78a078aea5961dd9c99a08...b882d8f1b3d47082a1c13497900b80896c1dfb17)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/b882d8f1b3d47082a1c13497900b80896c1dfb17...219fca227535f1837cc322cfe504bdd7ada3f246)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b882d8f1|A-BO|Wed Sep 30 00:53:48 2026 +0800|luci: adjusted the dnsmasq cache hash calculation logic
-44e821a2|A-BO|Tue Sep 29 10:22:04 2026 +0800|luci: support subscription cookies
+219fca22|A-BO|Thu Oct 1 02:12:51 2026 +0800|luci: 26.10.1
+8eeaa7d9|A-BO|Thu Oct 1 02:07:11 2026 +0800|luci: optimize dns-related
+15890d37|A-BO|Wed Sep 30 18:15:43 2026 +0800|luci: adjust and optimize
 </details>
