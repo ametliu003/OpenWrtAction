@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/219fca227535f1837cc322cfe504bdd7ada3f246...d1094a6e3418cad2410c82969e79cd3f7f43e584)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+d1094a6e|A-BO|Fri Oct 2 20:50:43 2026 +0800|luci: adjust smartdns start/stop logic
+05ce701f|A-BO|Fri Oct 2 19:30:18 2026 +0800|luci: detach cron jobs with setsid when available
+97a60e9b|A-BO|Fri Oct 2 03:45:50 2026 +0800|luci: adjust the dns logic of the shunt node
+158f3949|A-BO|Fri Oct 2 02:49:30 2026 +0800|luci: fix stop lock errors
+</details>
