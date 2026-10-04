@@ -1,0 +1,12 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/313718c25f206cdeee399bdc6c002b7388c9a513...89dfac46c9f1eaeb56c6cf49eb289b4475f446f7)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+89dfac46c9|Tianling Shen|Sun Oct 4 17:54:28 2026 +0800|Merge Official Source
+69c6eebf56|Hauke Mehrtens|Thu Oct 1 01:48:34 2026 +0200|mac80211: update to version 6.18.55
+5545740354|Tianling Shen|Thu May 21 17:00:34 2026 +0800|valgrind: fix ARMv7 detection on AArch64
+15421742a9|Michael Pfeifroth|Mon Jun 22 14:13:37 2026 +0200|wifi-scripts: enforce WPA3 for all encryption types on 6 GHz
+</details>

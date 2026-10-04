@@ -1,13 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d1094a6e3418cad2410c82969e79cd3f7f43e584...75be384bc0cf124e28b159f6a0a6cb4b946a5242)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/75be384bc0cf124e28b159f6a0a6cb4b946a5242...a60c49eb21ee4514e4d829970882e7d01bacea3c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-75be384b|A-BO|Sat Oct 3 21:45:47 2026 +0800|luci: bump 26.10.3
-05463b83|A-BO|Sat Oct 3 21:22:39 2026 +0800|luci: optimize dns log
-eca13dc2|A-BO|Sat Oct 3 20:42:18 2026 +0800|luci: fix the `remove` function in api
-f9383b01|A-BO|Sat Oct 3 16:05:44 2026 +0800|luci: Change FakeIPv4Pool to 198.18.0.0/16
-f8bced10|A-BO|Sat Oct 3 15:44:22 2026 +0800|luci: output geoview error messages
+a60c49eb|A-BO|Sun Oct 4 22:18:34 2026 +0800|luci: bump 26.10.4
+8190b02a|A-BO|Sun Oct 4 22:15:51 2026 +0800|luci: add quic receive window settings for hy2
+d7584ecd|A-BO|Sun Oct 4 20:40:50 2026 +0800|luci: add LuCI main program update function
+2ccbd9a1|A-BO|Sun Oct 4 14:42:27 2026 +0800|luci: adjust LuCI get remote version number logic
+b27c3899|A-BO|Sun Oct 4 12:42:13 2026 +0800|luci: add download progress display in app updates
+e9117b8a|A-BO|Sun Oct 4 11:17:03 2026 +0800|luci: optimize github proxy in app update
 </details>
