@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2d8e8c8144ff7cde3818513478cc644d56c2ecb8...8555a478a2b3b63bdf32cb94f934f948c50fd4ff)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+8555a478|A-BO|Thu Oct 8 02:07:56 2026 +0800|luci: optimize and fix
+1a15c386|A-BO|Wed Oct 7 13:10:46 2026 +0800|luci: remove `curl_direct` related logic
+2708533e|A-BO|Wed Oct 7 12:56:45 2026 +0800|luci: modify the unit for the hy2 quic receive window setting
+</details>
